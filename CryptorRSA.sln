@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptorRSA", "CryptorRSA.csproj", "{73D8CD1A-5F95-418C-965A-4E6270DC3FBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73D8CD1A-5F95-418C-965A-4E6270DC3FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D8CD1A-5F95-418C-965A-4E6270DC3FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D8CD1A-5F95-418C-965A-4E6270DC3FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D8CD1A-5F95-418C-965A-4E6270DC3FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17B34B63-8C1E-494F-B2AD-A636A27B6ADC}
+	EndGlobalSection
+EndGlobal
