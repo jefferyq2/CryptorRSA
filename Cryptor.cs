@@ -74,6 +74,7 @@ namespace CryptorRSA {
             PRS = new RSAkeygen(numP, numQ, numE, firstNumber, MessageInitial.Count * LetterBinarySize);
             PRS.CreateNextNumber();
 
+
             for (int i = 0; i < Alphabet.Length; i++) {
                 binaryValueTemp = BinaryConvert.Convert(10, i, 2);
                 binaryValueOut = FillLeft(binaryValueTemp, LetterBinarySize);

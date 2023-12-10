@@ -51,7 +51,7 @@ namespace CryptorRSA
                 }
                 catch (IndexOutOfRangeException)
                 {
-                    Console.Write($"ERROR (Symbols amount: {index}) ");
+                    MessageBox.Show("Error: RSA failed to create Gamma from this key, try other numbers");
                     break;
                 }
                 finally
