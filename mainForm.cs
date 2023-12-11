@@ -26,7 +26,7 @@ namespace CryptorRSA {
                 }
             }
         }
-
+         
         private void FileDialogSave() {
             string finalMessageFilename = string.Empty;
 
@@ -101,11 +101,12 @@ namespace CryptorRSA {
             Encoder.InputMessage(this.fileLocation);
             Encoder.InitializeParameters(int.Parse(keyList[0]), int.Parse(keyList[1]), int.Parse(keyList[2]), int.Parse(keyList[3]), keyList[4]);
 
-            Encoder.PrintDictionary();
-            Encoder.GetConvertedMessage();
-            Encoder.GetGamma();
-
-            Encoder.SetFinalMessage();
+            try {
+                Encoder.SetFinalMessage();
+            }
+            catch (System.IndexOutOfRangeException) {
+                MessageBox.Show("Error: RSA failed to create Gamma from this key, try other numbers");
+            }
 
             this.finalMessage = Encoder.GetFinalMessage();
             MessageBox.Show(Encoder.GetFinalMessage());
@@ -119,11 +120,12 @@ namespace CryptorRSA {
             Decoder.InputMessage(this.fileLocation);
             Decoder.InitializeParameters(int.Parse(keyList[0]), int.Parse(keyList[1]), int.Parse(keyList[2]), int.Parse(keyList[3]), keyList[4]);
 
-            Decoder.PrintDictionary();
-            Decoder.GetConvertedMessage();
-            Decoder.GetGamma();
-
-            Decoder.SetFinalMessage();
+            try {
+                Decoder.SetFinalMessage();
+            }
+            catch (System.IndexOutOfRangeException) {
+                MessageBox.Show("Error: RSA failed to create Gamma from this key, try other numbers");
+            }
 
             MessageBox.Show(Decoder.GetFinalMessage());
         }
